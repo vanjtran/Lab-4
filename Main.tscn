@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bj8vcu16b257x"]
+
+[ext_resource type="PackedScene" uid="uid://bwoxqq6m7b4l3" path="res://character.tscn" id="1_f1k4t"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.64594, -2.57748, -0.17177)
+size = Vector3(10.6505, 0.352783, 23.751)
+
+[node name="CSGPolygon3D" type="CSGPolygon3D" parent="."]
+transform = Transform3D(0.980447, -0.196785, 0, 0.196785, 0.980447, 0, 0, 0, 1, 2.64594, -2.55091, 4.29529)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.64594, -2.514, -0.17177)
+size = Vector3(1, 1.12695, 1)
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("1_f1k4t")]
+transform = Transform3D(0.273305, 0, -0.961928, 0, 1, 0, 0.961928, 0, 0.273305, 1.81348, -0.861052, 1.16035)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.273305, 0, -0.961928, 0, 1, 0, 0.961928, 0, 0.273305, 1.81348, 2.25612, 0.650177)
